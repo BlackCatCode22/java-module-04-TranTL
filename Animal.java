@@ -8,14 +8,22 @@ public class Animal {
     // Create a constructor for our new Animals object
     public Animal() { numOfAnimals++; }
 
-    // Create a constructor that accepts a name
-    public Animal(String aName) {
-        this.animalName = aName;
+    // Create a constructor that accepts all fields as arguments
+    public Animal(String sex, int age, int weight, String animalName,
+    String animalID, String animalBirthdate, String animalColor, String animalOrigin                ) {
+        this.sex = sex;
+        this.age = age;
+        this.weight = weight;
+        this.animalName = animalName;
+        this.animalID = animalID;
+        this.animalBirthdate = animalBirthdate;
+        this.animalColor = animalColor;
+        this.animalOrigin = animalOrigin;
+
         numOfAnimals++;
     }
 
-    // Create all attributes (fields) that we need
-    // Create a few attributes (fields)
+    // Create all attributes (fields) that we need for our midterm program.
     // Sex will be 'male' or 'female'
     String sex;
     private int age;
@@ -25,11 +33,11 @@ public class Animal {
     private String animalID;
     // animal names come from a text file called animalNames.txt
     private String animalName;
-    // animal birthdate
-    private Date animalBirthdate;
-    // animal color
+    // animal birthdate is going to be a string here (in this class)
+    private String animalBirthdate;
+    // animal color is a String
     private String animalColor;
-    // origin zoo
+    // origin will be a string like: "from:  Friguia Park, Tunisia"
     private String animalOrigin;
     // arrival date
     private Date animalArrivalDate;
@@ -77,8 +85,6 @@ public class Animal {
 
     public Date getAnimalArrivalDate() {return animalArrivalDate;}
     public void setAnimalArrivalDate(Date animalArrivalDate) {this.animalArrivalDate = animalArrivalDate;}
-
-
-
-
 }
+
+

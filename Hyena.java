@@ -6,10 +6,7 @@ public class Hyena extends tran.zoo.com.Animal {
 
     // Create a constructor
     public Hyena(String someName) {
-        super(someName);
+        super();
         numOfHyenas++;
-    }
-    public static int getNumOfHyenas() {
-        return numOfHyenas;
     }
 }
